@@ -1,0 +1,77 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+body {
+  color: #fff5e1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  font-family: 'Roboto';
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #3c3a39;
+  height: 4em;
+}
+
+header h2 {
+  padding-left: 1.2em;
+  font-size: medium;
+  align-self: flex-end;
+  padding-bottom: 0;
+}
+
+header img {
+  padding-right: 1.5em;
+  size: 2em;
+  padding-bottom: 0.75em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  background-color: black;
+  background-image: url("./illustration-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 14em 20em;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+footer {
+  padding-bottom: 3em;
+  margin-left: 2em;
+}
+
+footer a {
+  padding-right: 1em;
+}
+
+article {
+  padding-left: 1.2em;
+}
+
+article h1 {
+  padding-top: 1.5em;
+  padding-bottom: 0;
+  font-family: "Crete Round";
+  color: #ff6b00;
+  font-size: 3.5em;
+  font-weight: lighter;
+  margin: 0;
+}
+
+article h2 {
+  padding-top: 0;
+  font-family: 'Roboto';
+}
+
+article h3 {
+  padding-top: 0.5em;
+  padding-right: 3em;
+  font-family: 'Poppins';
+  font-weight: lighter;
+}
