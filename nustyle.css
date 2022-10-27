@@ -15,18 +15,20 @@ header {
   height: 4em;
 }
 
-header h2 {
+.header-logo {
   padding-left: 1.2em;
+  color: #fff5e1;
   font-size: 18px;
   font-weight: 700;
   align-self: flex-end;
-  padding-bottom: 0;
+  padding-bottom: 1em;
+  text-decoration: none;
 }
 
 header img {
   padding-right: 1.5em;
   height: 12px;
-  padding-bottom: 0.9em;
+  padding-bottom: 1em;
 }
 
 .container {
