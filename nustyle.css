@@ -17,15 +17,16 @@ header {
 
 header h2 {
   padding-left: 1.2em;
-  font-size: medium;
+  font-size: 18px;
+  font-weight: 700;
   align-self: flex-end;
   padding-bottom: 0;
 }
 
 header img {
   padding-right: 1.5em;
-  size: 2em;
-  padding-bottom: 0.75em;
+  height: 12px;
+  padding-bottom: 0.9em;
 }
 
 .container {
@@ -35,18 +36,19 @@ header img {
   background-color: black;
   background-image: url("./illustration-header-mobile.png");
   background-repeat: no-repeat;
-  background-position: 14em 20em;
+  background-position: 14em 15em;
+  background-size: 40%;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
-footer {
-  padding-bottom: 3em;
-  margin-left: 2em;
+.icons {
+  padding-bottom: 5em;
+  display: flex;
+  list-style: none;
 }
 
-footer a {
+.icon-buttons {
   padding-right: 1em;
 }
 
@@ -59,19 +61,21 @@ article h1 {
   padding-bottom: 0;
   font-family: "Crete Round";
   color: #ff6b00;
-  font-size: 3.5em;
-  font-weight: lighter;
+  font-size: 64px;
+  font-weight: 400;
   margin: 0;
 }
 
 article h2 {
   padding-top: 0;
   font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
 }
 
-article h3 {
-  padding-top: 0.5em;
-  padding-right: 3em;
+article p {
+  padding-right: 2em;
   font-family: 'Poppins';
-  font-weight: lighter;
+  font-size: 16px;
+  font-weight: 400;
 }
