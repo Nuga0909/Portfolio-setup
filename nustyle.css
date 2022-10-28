@@ -16,6 +16,7 @@ header {
 }
 
 .header-logo {
+  font-style: normal;
   padding-left: 1.2em;
   color: #fff5e1;
   font-size: 18px;
@@ -54,11 +55,11 @@ header img {
   padding-right: 1em;
 }
 
-article {
+.intro {
   padding-left: 1.2em;
 }
 
-article h1 {
+.intro h1 {
   padding-top: 1.5em;
   padding-bottom: 0;
   font-family: "Crete Round";
@@ -68,16 +69,207 @@ article h1 {
   margin: 0;
 }
 
-article h2 {
+.intro h2 {
   padding-top: 0;
   font-family: 'Roboto';
   font-size: 24px;
   font-weight: 700;
 }
 
-article p {
+.intro p {
   padding-right: 2em;
   font-family: 'Poppins';
   font-size: 16px;
   font-weight: 400;
+}
+
+.main-project {
+  color: #1c1a19;
+  padding: 4.5em 1.5em 0 1.5em;
+}
+
+.banner {
+  font-family: "Crete Round";
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 0.7em;
+  margin-bottom: 1.8em;
+  border-bottom: 1px solid #212121;
+}
+
+.main-project h2 {
+  font-family: "Crete Round";
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.main-project p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main-project ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0;
+  margin: 0;
+}
+
+.main-project li {
+  padding: 0.7em;
+  margin: 1em 1em 1em 0;
+  justify-content: center;
+  border: 1px solid #8993a4;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.main-project button {
+  background-color: #ff6b00;
+  width: 124px;
+  height: 48px;
+  border: none;
+  font-family: "Inter";
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.other-projects {
+  background-image: url("Img Placeholder 2.png");
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0 1.5em 1.5em;
+}
+
+.other-projects h2 {
+  font-family: "Crete Round";
+  font-size: 32px;
+  font-weight: 400;
+  padding-top: 2.8em;
+  margin-left: 0.5em;
+}
+
+.other-projects p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 2em 0 1em;
+  padding: 0;
+}
+
+.other-projects ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  margin: 0 0 0 0.5em;
+}
+
+.other-projects li {
+  padding: 0.7em;
+  margin: 0 1em 1em 0;
+  border: none;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.other-projects button {
+  background-color: #ff6b00;
+  width: 100%;
+  height: 48px;
+  border: none;
+  font-family: "Inter";
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  background-image: url("Group.png");
+  background-repeat: no-repeat;
+  background-position: 14em 18.5em;
+  background-size: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me h1 {
+  font-family: "Crete Round";
+  color: #ff6b00;
+  font-size: 72px;
+  font-weight: 400;
+  padding-left: 0.3em;
+  margin: 1em 0 0 0;
+}
+
+.about-me p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.about-me button {
+  background-color: #ff6b00;
+  width: 161px;
+  height: 48px;
+  border: none;
+  font-family: "Inter";
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-left: 1.5em;
+  margin-bottom: 10em;
+}
+
+.about-me button:hover {
+  background-color: #5e361a;
+}
+
+.about-me hr {
+  width: 327px;
+}
+
+.skills {
+  padding: 5em 0;
+  margin-left: 0%;
+}
+
+.skills-list {
+  font-size: 32px;
+  font-family: "Inter";
+  font-weight: 700;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.skillset {
+  font-size: 22px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  padding: 2em 1em 0 1em;
 }
