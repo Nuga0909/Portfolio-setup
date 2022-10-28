@@ -241,8 +241,22 @@ header img {
   margin-bottom: 10em;
 }
 
+.main-project button:hover {
+  background-color: #f8b791;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.other-projects button:hover {
+  background-color: #f8b791;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
 .about-me button:hover {
-  background-color: #5e361a;
+  background-color: #f8b791;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .about-me hr {
