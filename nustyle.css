@@ -287,3 +287,36 @@ header img {
   text-align: center;
   padding: 2em 1em 0 1em;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  text-align: center;
+  Font-family: Inter;
+  Font-style: Bold;
+  Font-size: 32px;
+  Line-height: 44px;
+  color: rgb(23, 43, 77);
+}
+
+.form-input {
+  margin: 24px;
+  padding: 14px 16px;
+  border:none;
+  border-bottom: 1px solid #DBD8D7;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea {
+  background-color: #FBF8F7;
+  border: none;
+  margin: 24px;
+  padding: 12px;
+}
