@@ -352,3 +352,27 @@ header img {
   color: #fff;
   margin-bottom: 124px;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 13px;
+}
+
+.icons2 {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+ul.icons2 {
+  margin: 0;
+  padding: 0;
+}
+
+#shape {
+  align-self: center;
+  margin-top: 15px;
+}
