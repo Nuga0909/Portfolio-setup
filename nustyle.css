@@ -37,7 +37,7 @@ header img {
   flex-direction: column;
   align-content: stretch;
   background-color: black;
-  background-image: url("./illustration-header-mobile.png");
+  background-image: url('./illustration-header-mobile.png');
   background-repeat: no-repeat;
   background-position: 14em 15em;
   background-size: 40%;
@@ -62,7 +62,7 @@ header img {
 .intro h1 {
   padding-top: 1.5em;
   padding-bottom: 0;
-  font-family: "Crete Round";
+  font-family: 'Crete Round';
   color: #ff6b00;
   font-size: 64px;
   font-weight: 400;
@@ -89,7 +89,7 @@ header img {
 }
 
 .banner {
-  font-family: "Crete Round";
+  font-family: 'Crete Round';
   font-size: 40px;
   font-weight: 400;
   padding-bottom: 0.7em;
@@ -98,13 +98,13 @@ header img {
 }
 
 .main-project h2 {
-  font-family: "Crete Round";
+  font-family: 'Crete Round';
   font-size: 32px;
   font-weight: 400;
 }
 
 .main-project p {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
 }
@@ -121,7 +121,7 @@ header img {
   margin: 1em 1em 1em 0;
   justify-content: center;
   border: 1px solid #8993a4;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 15px;
   font-weight: 500;
   list-style: none;
@@ -132,7 +132,7 @@ header img {
   width: 124px;
   height: 48px;
   border: none;
-  font-family: "Inter";
+  font-family: 'Inter';
   color: #fff;
   font-size: 17px;
   font-weight: 700;
@@ -142,14 +142,14 @@ header img {
 }
 
 .other-projects {
-  background-image: url("Img Placeholder 2.png");
+  background-image: url('Img Placeholder 2.png');
   background-repeat: no-repeat;
   padding: 0;
   margin: 0 1.5em 1.5em;
 }
 
 .other-projects h2 {
-  font-family: "Crete Round";
+  font-family: 'Crete Round';
   font-size: 32px;
   font-weight: 400;
   padding-top: 2.8em;
@@ -157,7 +157,7 @@ header img {
 }
 
 .other-projects p {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
   margin: 0 2em 0 1em;
@@ -175,7 +175,7 @@ header img {
   padding: 0.7em;
   margin: 0 1em 1em 0;
   border: none;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 15px;
   font-weight: 500;
   list-style: none;
@@ -187,7 +187,7 @@ header img {
   width: 100%;
   height: 48px;
   border: none;
-  font-family: "Inter";
+  font-family: 'Inter';
   color: #fff;
   font-size: 17px;
   font-weight: 700;
@@ -200,7 +200,7 @@ header img {
   display: flex;
   flex-direction: column;
   background-color: black;
-  background-image: url("Group.png");
+  background-image: url('Group.png');
   background-repeat: no-repeat;
   background-position: 14em 18.5em;
   background-size: 40%;
@@ -209,7 +209,7 @@ header img {
 }
 
 .about-me h1 {
-  font-family: "Crete Round";
+  font-family: 'Crete Round';
   color: #ff6b00;
   font-size: 72px;
   font-weight: 400;
@@ -218,7 +218,7 @@ header img {
 }
 
 .about-me p {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
   padding-left: 1.5em;
@@ -230,7 +230,7 @@ header img {
   width: 161px;
   height: 48px;
   border: none;
-  font-family: "Inter";
+  font-family: 'Inter';
   color: #fff;
   font-size: 17px;
   font-weight: 700;
@@ -270,7 +270,7 @@ header img {
 
 .skills-list {
   font-size: 32px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 700;
   color: #fff;
   list-style: none;
@@ -280,7 +280,7 @@ header img {
 
 .skillset {
   font-size: 22px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 400;
   color: #fff;
   list-style: none;
@@ -293,30 +293,58 @@ header img {
   flex-direction: column;
 }
 
+#formid {
+  border: none;
+  border-bottom: 1px solid #1c1a19;
+  border-bottom-color: #dfe1e6;
+  display: flex;
+  flex-direction: column;
+}
+
 .form-header {
   text-align: center;
-  Font-family: Inter;
-  Font-style: Bold;
-  Font-size: 32px;
-  Line-height: 44px;
+  font-family: Inter;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 44px;
   color: rgb(23, 43, 77);
+  margin: 120px 24px 24px 24px;
 }
 
 .form-input {
   margin: 24px;
   padding: 14px 16px;
-  border:none;
-  border-bottom: 1px solid #DBD8D7;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
 }
 
-.contact-form {
+/* .contact-form {
   display: flex;
   flex-direction: column;
-}
+  border: none;
+  border-bottom: 1px solid #DBD8D7;
+} */
 
 #textarea {
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   border: none;
   margin: 24px;
   padding: 12px;
+}
+
+#form-button {
+  align-items: center;
+  padding: 12px;
+  width: 131px;
+  height: 48px;
+  background: #ff6b00;
+  margin: 24px 122px;
+  border: none;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 124px;
 }
