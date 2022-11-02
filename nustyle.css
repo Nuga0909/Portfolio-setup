@@ -304,7 +304,7 @@ header img {
 .form-header {
   text-align: center;
   font-family: Inter;
-  font-style: Bold;
+  font-style: bold;
   font-size: 32px;
   line-height: 44px;
   color: rgb(23, 43, 77);
@@ -316,20 +316,25 @@ header img {
   padding: 14px 16px;
   border: none;
   border-bottom: 1px solid #dbd8d7;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
 }
-
-/* .contact-form {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-bottom: 1px solid #DBD8D7;
-} */
 
 #textarea {
   background-color: #fbf8f7;
   border: none;
   margin: 24px;
   padding: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
 }
 
 #form-button {
@@ -340,7 +345,6 @@ header img {
   background: #ff6b00;
   margin: 24px 122px;
   border: none;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
