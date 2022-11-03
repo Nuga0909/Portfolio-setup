@@ -12,7 +12,11 @@ header {
   align-items: flex-end;
   justify-content: space-between;
   background-color: #3c3a39;
-  height: 4em;
+  height: 72px;
+}
+
+#nav-desktop {
+  display: none;
 }
 
 .header-logo {
@@ -26,7 +30,7 @@ header {
   text-decoration: none;
 }
 
-header img {
+#hamburger {
   padding-right: 1.5em;
   height: 12px;
   padding-bottom: 1em;
@@ -86,6 +90,10 @@ header img {
 .main-project {
   color: #1c1a19;
   padding: 4.5em 1.5em 0 1.5em;
+}
+
+.works-header hr {
+  display: none;
 }
 
 .banner {
@@ -375,4 +383,152 @@ ul.icons2 {
 #shape {
   align-self: center;
   margin-top: 15px;
+}
+
+#form-button:hover {
+  background-color: #f8b791;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+@media screen and (min-width: 768px) {
+  #nav-mobile {
+    display: none;
+  }
+
+  #nav-desktop {
+    display: inline;
+    align-self: center;
+  }
+
+  #nav-desktop a {
+    padding-right: 32px;
+    margin: 0;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header img {
+    height: 18px;
+    padding-bottom: 0;
+    padding-right: 119px;
+  }
+
+  .header-logo {
+    padding-left: 154px;
+    font-size: 20px;
+    padding-bottom: 26px;
+  }
+
+  .container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    background-image: url(./assets/Illustration-header.png);
+    background-position: right;
+  }
+
+  .icons {
+    flex-direction: column;
+    padding: 279px 0 21px 36px;
+  }
+
+  .intro {
+    padding-left: 71px;
+  }
+
+  .intro p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 731px;
+    margin-bottom: 251px;
+  }
+
+  .intro h1 {
+    padding-top: 192px;
+  }
+
+  .icons li {
+    padding-bottom: 21px;
+  }
+
+  .works {
+    margin: 135px 153.5px 0 153.5px;
+  }
+
+  .main-project {
+    padding: 0;
+  }
+
+  .hr {
+    display: inline-block;
+    content: "";
+    background-color: #212121;
+    height: 1px;
+    width: 61%;
+    padding-right: 30px;
+    margin-left: 20px;
+  }
+
+  .banner {
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+
+  #project {
+    display: grid;
+    grid-template-columns: 600px 400px;
+    gap: 24px;
+  }
+
+  #project-story {
+    width: min-content;
+  }
+
+  #project img {
+    min-height: 400px;
+    min-width: 600px;
+    display: flex;
+    flex-shrink: inherit;
+  }
+
+  #project h2 {
+    margin-top: 0;
+  }
+
+  #projects-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 29px;
+    margin-top: 24px;
+    margin-bottom: 130px;
+  }
+
+  .other-projects {
+    margin: 0;
+    background-position-y: center;
+  }
+
+  .about-me {
+    background-image: url(./assets/illustration-aboutme.png);
+    background-position: right 6em;
+    padding-top: 130px;
+    padding-left: 142px;
+  }
+
+  .about-me h1 {
+    margin-top: 0;
+  }
+
+  .about-me p {
+    width: 566px;
+  }
+
+  .about-me hr {
+    width: 1156px;
+  }
 }

@@ -27,10 +27,16 @@
   <body>
     <header>
       <a href="#" class="header-logo">John Doe</a>
-      <nav>
+      <nav id="nav-mobile">
         <a href="#">
-          <img src="assets\Union.png" alt="drop-down" />
+          <img src="assets\Union.png" alt="drop-down" id="hamburger" />
         </a>
+      </nav>
+      <nav id="nav-desktop">
+        <a href="">Portfolio</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href=""><img src="./assets/Union - 1.png" alt="" /></a>
       </nav>
     </header>
     <section class="container">
@@ -77,99 +83,107 @@
     </section>
     <section class="works">
       <div class="main-project">
-        <h1 class="banner">My Recent Works</h1>
-        <img src="assets\Img Placeholder.png" alt="" />
-        <h2>Multi-Post Stories</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul>
-          <li>css</li>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
+        <div class="works-header">
+          <h1 class="banner">My Recent Works <span class="hr"></h1>
+        </div>
+        <div id="project">
+          <img src="assets\Img Placeholder.png" alt="" />
+          <div id="project-story">
+            <h2>Multi-Post Stories</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text ever
+              since the 1500s, when an unknown printer took a standard dummy text.
+            </p>
+            <ul>
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button type="button">See Project</button>
+          </div>
+        </div>
       </div>
-      <div class="other-projects">
-        <h2>Profesional Art Printing Data</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard.
-        </p>
-        <ul>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
-      </div>
-      <div class="other-projects">
-        <h2>Profesional Art Printing Data</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard.
-        </p>
-        <ul>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
-      </div>
-      <div class="other-projects">
-        <h2>Profesional Art Printing Data</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard.
-        </p>
-        <ul>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
-      </div>
-      <div class="other-projects">
-        <h2>Profesional Art Printing Data</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard.
-        </p>
-        <ul>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
-      </div>
-      <div class="other-projects">
-        <h2>Profesional Art Printing Data</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard.
-        </p>
-        <ul>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
-      </div>
-      <div class="other-projects">
-        <h2>Profesional Art Printing Data</h2>
-        <p>
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard.
-        </p>
-        <ul>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
+      <div id="projects-container">
+        <div class="other-projects">
+          <h2>Profesional Art Printing Data</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+        <div class="other-projects">
+          <h2>Profesional Art Printing Data</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+        <div class="other-projects">
+          <h2>Profesional Art Printing Data</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+        <div class="other-projects">
+          <h2>Profesional Art Printing Data</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+        <div class="other-projects">
+          <h2>Profesional Art Printing Data</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+        <div class="other-projects">
+          <h2>Profesional Art Printing Data</h2>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard.
+          </p>
+          <ul>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
       </div>
     </section>
     <section class="about-me">
@@ -250,7 +264,6 @@
         ></textarea>
         <button type="submit" id="form-button">Get in touch</button>
       </form>
-      
     </section>
     <footer>
       <ul class="icons2">
@@ -280,7 +293,7 @@
           </a>
         </li>
       </ul>
-      <img id="shape" src="assets\Shape.png" alt="#">
+      <img id="shape" src="assets\Shape.png" alt="#" />
     </footer>
   </body>
 </html>
