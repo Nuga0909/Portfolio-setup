@@ -391,6 +391,10 @@ ul.icons2 {
   color: #f55800;
 }
 
+#footer-hr {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   #nav-mobile {
     display: none;
@@ -530,5 +534,53 @@ ul.icons2 {
 
   .about-me hr {
     width: 1156px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .skills-list {
+    text-align: inherit;
+  }
+
+  .skillset {
+    text-align: inherit;
+    padding-left: 0;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-header {
+    max-width: 455px;
+    text-align: left;
+    padding-left: 135px;
+    margin: 130px 0 0 0;
+  }
+
+  #formid {
+    padding-top: 100px;
+    border: none;
+  }
+
+  #form-button {
+    margin: 0 0 154px 24px;
+  }
+
+  #textarea {
+    height: 114px;
+  }
+
+  #footer-hr {
+    display: block;
+    border: 1px solid #e0e1e6;
+  }
+
+  #shape {
+    display: none;
   }
 }
