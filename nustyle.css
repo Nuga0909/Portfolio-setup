@@ -156,12 +156,23 @@ header {
   margin: 0 1.5em 1.5em;
 }
 
+#other-projects2 {
+  background-image: url('./assets/PlaceholderAA.png');
+}
+
+#other-projects3 {
+  background-image: url('./assets/PlaceholderBB.png');
+}
+
 .other-projects h2 {
   font-family: 'Crete Round';
   font-size: 32px;
   font-weight: 400;
   padding-top: 2.8em;
   margin-left: 0.5em;
+  height: 81px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .other-projects p {
@@ -534,6 +545,14 @@ ul.icons2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  #other-projects2:hover {
+    background-image: url(./assets/Placeholder44.png);
+  }
+
+  #other-projects3:hover {
+    background-image: url(./assets/Placeholder44.png);
   }
 
   .about-me {
