@@ -447,7 +447,7 @@ ul.icons2 {
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
-    padding-right: 731px;
+    width: 50%;
     margin-bottom: 251px;
   }
 
@@ -500,6 +500,10 @@ ul.icons2 {
     flex-shrink: inherit;
   }
 
+  .other-projects:hover .hover {
+    display: none;
+  }
+
   #project h2 {
     margin-top: 0;
   }
@@ -517,6 +521,21 @@ ul.icons2 {
     background-position-y: center;
   }
 
+  .other-projects button {
+    display: none;
+  }
+
+  .other-projects:hover button {
+    display: block;
+  }
+
+  .other-projects:hover {
+    background-image: url(./assets/Placeholder44.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
   .about-me {
     background-image: url(./assets/illustration-aboutme.png);
     background-position: right 6em;
@@ -529,7 +548,7 @@ ul.icons2 {
   }
 
   .about-me p {
-    width: 566px;
+    width: 40%;
     padding-bottom: 24px;
   }
 
