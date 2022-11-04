@@ -270,7 +270,6 @@ header {
   background-color: #f8b791;
   border: 1px solid #f55800;
   color: #f55800;
-
 }
 
 .about-me button:hover {
@@ -279,6 +278,7 @@ header {
   background-color: #f8b791;
   border: 1px solid #f55800;
   color: #f55800;
+  transform: translate(4px, 4px);
 }
 
 .about-me hr {
@@ -483,7 +483,7 @@ ul.icons2 {
 
   .hr {
     display: inline-block;
-    content: "";
+    content: '';
     background-color: #212121;
     height: 1px;
     width: 61%;
