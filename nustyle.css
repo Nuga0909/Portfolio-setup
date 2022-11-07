@@ -41,7 +41,7 @@ header {
   flex-direction: column;
   align-content: stretch;
   background-color: black;
-  background-image: url('./illustration-header-mobile.png');
+  background-image: url('./assets/illustration-header-mobile.png');
   background-repeat: no-repeat;
   background-position: 14em 15em;
   background-size: 40%;
@@ -150,7 +150,7 @@ header {
 }
 
 .other-projects {
-  background-image: url('Img Placeholder 2.png');
+  background-image: url('./assets/ImgPlaceholder2.png');
   background-repeat: no-repeat;
   padding: 0;
   margin: 0 1.5em 1.5em;
@@ -219,7 +219,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: black;
-  background-image: url('Group.png');
+  background-image: url('./assets/GroupDD.png');
   background-repeat: no-repeat;
   background-position: 14em 18.5em;
   background-size: 40%;
