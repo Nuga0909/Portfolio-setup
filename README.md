@@ -28,9 +28,19 @@
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
-
+👤 **Wolf M. Jacques**
+- GitHub: [@wolfmikerson](https://github.com/Wolfmikerson)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Figma Templates
+- My teamates
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
