@@ -261,13 +261,13 @@ header {
 }
 
 .main-project button:hover {
-  background-color: #f8b791;
+  background-color: #f8f5f4;
   border: 1px solid #f55800;
   color: #f55800;
 }
 
 .other-projects button:hover {
-  background-color: #f8b791;
+  background-color: #f8f5f4;
   border: 1px solid #f55800;
   color: #f55800;
 }
@@ -275,7 +275,7 @@ header {
 .about-me button:hover {
   transition-property: background-color;
   transition-duration: 1s;
-  background-color: #f8b791;
+  background-color: #f8f5f4;
   border: 1px solid #f55800;
   color: #f55800;
   transform: translate(4px, 4px);
@@ -400,7 +400,7 @@ ul.icons2 {
 }
 
 #form-button:hover {
-  background-color: #f8b791;
+  background-color: #f8f5f4;
   border: 1px solid #f55800;
   color: #f55800;
 }
