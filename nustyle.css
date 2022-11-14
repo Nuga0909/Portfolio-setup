@@ -409,6 +409,18 @@ ul.icons2 {
   display: none;
 }
 
+#hamburger.active {
+  background-color: #3c3a39;}
+
+#nav-desktop.active {
+  padding-bottom: 450px;
+  left: 0;
+  width: 100%;
+  margin-top: -8px;
+  opacity: 100px;
+  background-color: #3c3a39;
+}
+
 @media screen and (min-width: 768px) {
   #nav-mobile {
     display: none;
