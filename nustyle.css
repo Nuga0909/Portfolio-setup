@@ -409,10 +409,6 @@ ul.icons2 {
   display: none;
 }
 
-/* #nav-mobile.active {
-  background-color: #3c3a39;
-} */
-
 .nav-lists.active {
   position: fixed;
   left: -100%;
