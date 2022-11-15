@@ -421,7 +421,6 @@ ul.icons2 {
   flex-direction: column;
   background: #3c3a39;
   text-align: left;
-  transition: 0.5s;
   padding-left: 380px;
   list-style: none;
   padding-bottom: 450px;
@@ -443,20 +442,17 @@ a.nav-list {
   display: flex;
   align-items: flex-start;
   padding-top: 24px;
-  padding-left: 40px;
-  padding-bottom: 0;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #6f6c6b;
+  margin-inline: 20px;
+  margin-right: 28px;
 }
 
 a.close {
   float: right;
   margin-right: 38px;
   padding-top: 30px;
-}
-
-li#seperator {
-  padding: 0;
-  margin: 0;
-  padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -478,10 +474,6 @@ li#seperator {
 
   ul.nav-lists {
     list-style: none;
-  }
-
-  li#seperator {
-    display: none;
   }
 
   .close {
