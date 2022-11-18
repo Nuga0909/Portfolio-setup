@@ -13,7 +13,6 @@ window.onload = function () {
   }));
 };
 
-
 function hidePopup() {
   document.querySelector('.multi-cont').style.display = 'none';
 }

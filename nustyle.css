@@ -15,7 +15,7 @@ header {
   height: 72px;
 }
 
-#nav-desktop {
+.nav-lists {
   display: none;
 }
 
@@ -136,7 +136,7 @@ header {
 }
 
 .main-project button {
-  background-color: #ff6b00;
+  background-color: #a03f07;
   width: 124px;
   height: 48px;
   border: none;
@@ -202,7 +202,7 @@ header {
 }
 
 .other-projects button {
-  background-color: #ff6b00;
+  background-color: #a03f07;
   width: 100%;
   height: 48px;
   border: none;
@@ -245,7 +245,7 @@ header {
 }
 
 .about-me button {
-  background-color: #ff6b00;
+  background-color: #a03f07;
   width: 161px;
   height: 48px;
   border: none;
@@ -261,21 +261,21 @@ header {
 }
 
 .main-project button:hover {
-  background-color: #f8b791;
-  border: 1px solid #f55800;
-  color: #f55800;
+  background-color: #f8f5f4;
+  border: 1px solid #a03f07;
+  color: #a03f07;
 }
 
 .other-projects button:hover {
-  background-color: #f8b791;
-  border: 1px solid #f55800;
-  color: #f55800;
+  background-color: #f8f5f4;
+  border: 1px solid #a03f07;
+  color: #a03f07;
 }
 
 .about-me button:hover {
   transition-property: background-color;
   transition-duration: 1s;
-  background-color: #f8b791;
+  background-color: #f8f5f4;
   border: 1px solid #f55800;
   color: #f55800;
   transform: translate(4px, 4px);
@@ -364,7 +364,7 @@ header {
   padding: 12px;
   width: 131px;
   height: 48px;
-  background: #ff6b00;
+  background: #a03f07;
   margin: 24px 122px;
   border: none;
   font-family: 'Inter';
@@ -400,9 +400,9 @@ ul.icons2 {
 }
 
 #form-button:hover {
-  background-color: #f8b791;
-  border: 1px solid #f55800;
-  color: #f55800;
+  background-color: #f8f5f4;
+  border: 1px solid #a03f07;
+  color: #a03f07;
 }
 
 #footer-hr {
@@ -542,18 +542,32 @@ button.btn-pop {
   letter-spacing: 0.05em;
 }
 
-
 @media screen and (min-width: 768px) {
   #nav-mobile {
     display: none;
   }
 
-  #nav-desktop {
-    display: inline;
+  .nav-list2 {
+    display: block;
+    padding-top: 36px;
+  }
+
+  .nav-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
     align-self: center;
   }
 
-  #nav-desktop a {
+  ul.nav-lists {
+    list-style: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .nav-lists a {
     padding-right: 32px;
     margin: 0;
     font-family: Inter;
@@ -561,6 +575,7 @@ button.btn-pop {
     font-weight: 600;
     color: #fff;
     text-decoration: none;
+    padding-left: 0;
   }
 
   header img {
