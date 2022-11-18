@@ -104,7 +104,7 @@ closeSign.classList.add('closesign');
 // closeSign.setAttribute('alt', 'closesign');
 closeSign.src = 'assets/mobile/x.svg';
 closeSign.alt = 'closesign';
-popupX.onclick = hidePopup;
+closeSign.onclick = hidePopup;
 const popupTitle = document.createElement('h3');
 const popupUl = document.createElement('ul');
 const popupimg = document.createElement('img');
@@ -118,7 +118,7 @@ const sourceButton = document.createElement('button');
 sourceButton.innerText = 'See Source';
 sourceButton.className = 'btn-pop';
 popupSection.append(
-  popupX,
+  closeSign,
   popupTitle,
   popupUl,
   popupimg,
