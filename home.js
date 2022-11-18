@@ -32,57 +32,57 @@ const projectPages = [
     sourceLink: '#',
   },
   {
-     headerName: 'Profesional Art Printing Data',
+     headerName: 'Profesional Art',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image1: 'assets/mobile/project1.svg',
+    image1: './assets/Placeholder44b.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
   },
 
   {
-     headerName: 'Data Dashboard Healthcare',
+     headerName: 'Data Dashboard',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores sit laborum totam fugit beatae earum alias',
-    image1: 'assets/mobile/project1.svg',
-    technologies: ['html', 'css'],
+    'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
+    image1: './assets/Placeholder44b.png',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
   },
   {
      headerName: 'Website Protfolio',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores sit laborum totam fugit beatae earum alias',
-    image1: 'assets/mobile/project1.svg',
-    technologies: ['html', 'javascript', 'css', 'Ruby'],
+    'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
+    image1: './assets/Placeholder44b.png',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
   },
   {
-     headerName: 'Profesional Art Printing Data',
+     headerName: 'Profesional Art',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores sit laborum totam fugit beatae earum alias',
-    image1: 'assets/mobile/project1.svg',
-    technologies: ['javascript', 'bootstrap', 'Ruby'],
+    'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
+    image1: './assets/Placeholder44b.png',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
   },
   {
-     headerName: 'Data Dashboard Healthcare',
+     headerName: 'Data Dashboard',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores sit laborum totam fugit beatae earum alias',
-    image1: 'assets/mobile/project1.svg',
-    technologies: ['Ruby', 'html'],
+    'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
+    image1: './assets/Placeholder44b.png',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
   },
   {
      headerName: 'Website Protfolio',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo asperiores sit laborum totam fugit beatae earum alias',
-    image1: 'assets/mobile/project1.svg',
-    technologies: ['bootstrap'],
+      'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
+      image1: './assets/Placeholder44b.png',
+      technologies: ['html', 'bootstrap', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
   },
@@ -193,35 +193,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
     seeProjectBtn,
   );
 
-});
+
 
 /* ----------------- Building OTHER projects part (Mobile) ---------------- */
 
-// const otherProjectsSection = document.getElementById('other-projects-section');
-// for (let index = 1; index < projectPages.length; index += 1) {
-//   const projectArticle = document.createElement('article');
-//   projectArticle.className = `project${index} other-projects-item`;
-//   projectArticle.id = `project${index}`;
-//   const h1 = document.createElement('h1');
-//   h1.className = 'title-post';
-//   h1.innerText = projectPages[index]. headerName;
-//   const h2 = document.createElement('h2');
-//   h2.className = 'supporting-text';
-//   h2.innerText = projectPages[index].description;
-//   const ul = document.createElement('ul');
-//   ul.id = 'technologies';
-//   for (let j = 0; j < projectPages[index].technologies.length; j += 1) {
-//     let tech = '';
-//     tech = projectPages[index].technologies[j];
-//     ul.innerHTML += `<li>${tech}</li>`;
-//   }
-//   const button = document.createElement('button');
-//   button.className = 'my-buttons';
-//   button.onclick = () => {
-//     bindPopup(index);
-//   };
-//   button.innerText = 'See Project';
-//   otherProjectsSection.appendChild(projectArticle);
-//   const myArticle = document.getElementById(projectArticle.id);
-//   myArticle.append(h1, h2, ul, button);
-// }
+  const otherProjectsSection = document.getElementById('projects-container');
+  for (let index = 1; index < projectPages.length; index += 1) {
+    const projectArticle = document.createElement('article');
+    projectArticle.className = 'other-projects';
+    projectArticle.id = `project${index}`;
+    const otherProjectsH2 = document.createElement('h2');
+    otherProjectsH2.className = 'title-post hover';
+    otherProjectsH2.innerText = projectPages[index]. headerName;
+    const otherProjectsP = document.createElement('p');
+    otherProjectsP.className = 'supporting-text hover';
+    otherProjectsP.innerText = projectPages[index].description;
+    const ul = document.createElement('ul');
+    ul.className = 'hover';
+    for (let j = 0; j < projectPages[index].technologies.length; j += 1) {
+      let tech = '';
+      tech = projectPages[index].technologies[j];
+      ul.innerHTML += `<li>${tech}</li>`;
+    }
+    const button = document.createElement('button');
+    // button.className = 'my-buttons';
+    button.onclick = () => {
+      bindPopup(index);
+    };
+    button.innerText = 'See Project';
+    otherProjectsSection.appendChild(projectArticle);
+    const newArt = document.getElementById(projectArticle.id);
+    newArt.append(otherProjectsH2, otherProjectsP, ul, button);
+  }
+
+});
