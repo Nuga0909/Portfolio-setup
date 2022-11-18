@@ -16,8 +16,6 @@ window.onload = function () {
 
 function hidePopup() {
   document.querySelector('.multi-cont').style.display = 'none';
-  // document.querySelector('.grid-container').style.filter = '';
-  // document.querySelector('.toolbar').style.filter = '';
 }
 
 
@@ -90,8 +88,7 @@ const projectPages = [
 
 function showPopup() {
   document.querySelector('.multi-cont').style.display = 'flex';
-  // document.querySelector('.blurrr').style.filter = 'blur(5px)';
-  // document.querySelector('.multi-cont').style.filter = '';
+ 
 }
 
 
@@ -107,8 +104,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   popupSection.append(popupCont);
   const closeSign = document.createElement('img');
   closeSign.classList.add('closesign');
-  // closeSign.setAttribute('src', projectsCard[0].image2);
-  // closeSign.setAttribute('alt', 'closesign');
   closeSign.src = './assets/Icon.png';
   closeSign.alt = 'closesign';
   closeSign.onclick = hidePopup;
@@ -162,26 +157,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // imageMob.className = 'last-project-image1-mobile mobile-only';
   imageMob.src = './assets/Img Placeholder.png';
   imageMob.alt = 'project image';
-  // const imgDesktop = document.createElement('img');
-  // imgDesktop.className = 'desktop-images last-project-image1';
-  // imgDesktop.src = 'assets/desktop/last-project-desktop.svg';
-  // imgDesktop.alt = 'last project desktop';
   const projectInnerDiv = document.createElement('div');
   projectInnerDiv.id = 'project-story';
   projectArticle.append(imageMob, projectInnerDiv);
   const projectH2 = document.createElement('h2');
-  // projectH2.className = 'last-project-title';
   projectH2.innerText = projectPages[0]. headerName;
   const projectP = document.createElement('p');
-  // projectP.className = 'last-project-supporting-text';
   projectP.innerText = projectPages[0].description;
   const projectUl = document.createElement('ul');
-  // projectUl.className = 'last-project-items';
   for (let index = 0; index < projectPages[0].technologies.length; index += 1) {
     projectUl.innerHTML += `<li>${projectPages[0].technologies[index]}</li>`;
   }
   const seeProjectBtn = document.createElement('button');
-  // seeProjectBtn.className = 'my-buttons last-project-button';
   seeProjectBtn.onclick = () => {
     bindPopup(0);
   };
@@ -216,7 +203,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       ul.innerHTML += `<li>${tech}</li>`;
     }
     const button = document.createElement('button');
-    // button.className = 'my-buttons';
     button.onclick = () => {
       bindPopup(index);
     };
