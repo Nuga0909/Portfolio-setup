@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const popupDescription = document.createElement('p');
   popupDescription.className = 'multitext';
   const liveButton = document.createElement('button');
-  liveButton.innerText = 'See Live';
+  liveButton.innerHTML = '<p>See Live<img src="./assets/Vectorbtnnn.png" /></p>';
   liveButton.className = 'btn-pop1 hover';
   const sourceButton = document.createElement('button');
-  sourceButton.innerText = 'See Source';
+  sourceButton.innerHTML = '<p>See Source<img src="./assets/Icon - Export.png" /></p>';
   sourceButton.className = 'btn-pop2 hover';
   popupCont.append(
     closeSign,

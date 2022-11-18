@@ -136,7 +136,7 @@ header {
 }
 
 .main-project button {
-  background-color: #a03f07;
+  background-color: #f55800;
   width: 124px;
   height: 48px;
   border: none;
@@ -202,7 +202,7 @@ header {
 }
 
 .other-projects button {
-  background-color: #a03f07;
+  background-color: #f55800;
   width: 100%;
   height: 48px;
   border: none;
@@ -245,7 +245,7 @@ header {
 }
 
 .about-me button {
-  background-color: #a03f07;
+  background-color: #f55800;
   width: 161px;
   height: 48px;
   border: none;
@@ -262,14 +262,14 @@ header {
 
 .main-project button:hover {
   background-color: #f8f5f4;
-  border: 1px solid #a03f07;
-  color: #a03f07;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .other-projects button:hover {
   background-color: #f8f5f4;
-  border: 1px solid #a03f07;
-  color: #a03f07;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .about-me button:hover {
@@ -364,7 +364,7 @@ header {
   padding: 12px;
   width: 131px;
   height: 48px;
-  background: #a03f07;
+  background: #f55800;
   margin: 24px 122px;
   border: none;
   font-family: 'Inter';
@@ -401,8 +401,8 @@ ul.icons2 {
 
 #form-button:hover {
   background-color: #f8f5f4;
-  border: 1px solid #a03f07;
-  color: #a03f07;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 #footer-hr {
@@ -522,7 +522,7 @@ a.close {
 }
 
 button.btn-pop1 {
-  background-color: #a03f07;
+  background-color: #f55800;
   height: 48px;
   border: none;
   padding: 12px;
@@ -540,7 +540,7 @@ button.btn-pop1 {
 }
 
 button.btn-pop2 {
-  background-color: #a03f07;
+  background-color: #f55800;
   height: 48px;
   border: none;
   padding: 12px;
@@ -564,30 +564,37 @@ button.btn-pop2 {
   .multitext {
     width: 40%;
     position: relative;
-    left: 717px;
+    left: 56%;
+    top: 15%;
   }
 
   button.btn-pop2 {
-    left: 827px;
-    top: 215px;
+    left: 56%;
+    position: relative;
+    padding: 1px;
+    width: 12%;
+    margin-top: 1%;
   }
 
   button.btn-pop1 {
     position: relative;
-    left: 720px;
-    top: 279px;
+    left: 69%;
+    white-space: nowrap;
+    padding: 1px;
+    width: 10%;
+    margin-top: 18%;
   }
 
   button.btn-pop1:hover {
     background-color: #f8f5f4;
-    border: 1px solid #a03f07;
-    color: #a03f07;
+    border: 1px solid #f55800;
+    color: #f55800;
   }
 
   button.btn-pop2:hover {
     background-color: #f8f5f4;
-    border: 1px solid #a03f07;
-    color: #a03f07;
+    border: 1px solid #f55800;
+    color: #f55800;
   }
 
   .multi-cont2 {
@@ -601,8 +608,9 @@ button.btn-pop2 {
 
   .image1 {
     width: 50%;
+    height: 60%;
     position: absolute;
-    top: 183px;
+    top: 31%;
   }
 
   #nav-mobile {
@@ -716,7 +724,7 @@ button.btn-pop2 {
   }
 
   #project-story {
-    width: min-content;
+    width: 75%;
   }
 
   #project img {
