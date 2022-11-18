@@ -102,11 +102,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   const popupSection = document.querySelector('.multi-cont');
+  const popupCont = document.createElement('div');
+  popupCont.className = 'multi-cont2';
+  popupSection.append(popupCont);
   const closeSign = document.createElement('img');
   closeSign.classList.add('closesign');
   // closeSign.setAttribute('src', projectsCard[0].image2);
   // closeSign.setAttribute('alt', 'closesign');
-  // closeSign.src = './assets/Icon.png';
+  closeSign.src = './assets/Icon.png';
   closeSign.alt = 'closesign';
   closeSign.onclick = hidePopup;
   const popupTitle = document.createElement('h3');
@@ -124,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const sourceButton = document.createElement('button');
   sourceButton.innerText = 'See Source';
   sourceButton.className = 'btn-pop';
-  popupSection.append(
+  popupCont.append(
     closeSign,
     popupTitle,
     popupUl,
