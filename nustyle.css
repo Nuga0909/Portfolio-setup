@@ -428,6 +428,10 @@ ul.icons2 {
   display: none;
 }
 
+.nav-lists {
+  display: none;
+}
+
 a.nav-list {
   font-family: Inter;
   font-size: 32px;
@@ -449,6 +453,10 @@ a.close {
   float: right;
   margin-right: 38px;
   padding-top: 30px;
+}
+
+.blurNone{
+  filter: none;
 }
 
 .multi-cont {

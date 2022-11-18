@@ -90,8 +90,8 @@ const projectPages = [
 
 function showPopup() {
   document.querySelector('.multi-cont').style.display = 'flex';
-  // document.querySelector('.grid-container').style.filter = 'blur(5px)';
-  // document.querySelector('.toolbar').style.filter = 'blur(5px)';
+  // document.querySelector('.blurrr').style.filter = 'blur(5px)';
+  // document.querySelector('.multi-cont').style.filter = '';
 }
 
 
