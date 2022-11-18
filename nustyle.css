@@ -455,10 +455,6 @@ a.close {
   padding-top: 30px;
 }
 
-.blurNone{
-  filter: none;
-}
-
 .multi-cont {
   display: none;
   position: fixed;
