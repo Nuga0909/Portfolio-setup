@@ -15,7 +15,7 @@ window.onload = function () {
 
 
 function hidePopup() {
-  document.querySelector('.popup').style.display = 'none';
+  document.querySelector('.multi-cont').style.display = 'none';
   // document.querySelector('.grid-container').style.filter = '';
   // document.querySelector('.toolbar').style.filter = '';
 }
@@ -89,7 +89,7 @@ const projectPages = [
 ];
 
 function showPopup() {
-  document.querySelector('.popup').style.display = 'flex';
+  document.querySelector('.multi-cont').style.display = 'flex';
   // document.querySelector('.grid-container').style.filter = 'blur(5px)';
   // document.querySelector('.toolbar').style.filter = 'blur(5px)';
 }
@@ -101,7 +101,7 @@ function showPopup() {
 document.addEventListener("DOMContentLoaded", function(event) {     
 
 
-  const popupSection = document.querySelector('.popup');
+  const popupSection = document.querySelector('.multi-cont');
   const closeSign = document.createElement('img');
   closeSign.classList.add('closesign');
   // closeSign.setAttribute('src', projectsCard[0].image2);
@@ -110,11 +110,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   closeSign.alt = 'closesign';
   closeSign.onclick = hidePopup;
   const popupTitle = document.createElement('h3');
+  popupTitle.className = 'multi-stories';
   const popupUl = document.createElement('ul');
+  popupUl.className = 'ul-tech1';
   const popupImg = document.createElement('img');
   popupImg.alt = 'project';
   popupImg.className = 'image1';
   const popupDescription = document.createElement('p');
+  popupDescription.className = 'multitext';
   const liveButton = document.createElement('button');
   liveButton.innerText = 'See Live';
   liveButton.className = 'btn-pop';
