@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-window.onload=function() {
+window.onload = function () {
   const hamburger = document.querySelector('#nav-mobile');
   const nav = document.querySelector('.nav-lists');
   hamburger.addEventListener('click', () => {
@@ -11,4 +11,3 @@ window.onload=function() {
     hamburger.classList.remove('active');
     nav.classList.remove('active');
   }));
-};
