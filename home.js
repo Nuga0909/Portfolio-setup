@@ -80,40 +80,114 @@ const projectPages = [
   },
 ];
 
-// function showPopup() {
-//   document.querySelector('.popup').style.display = 'flex';
-//   document.querySelector('.grid-container').style.filter = 'blur(5px)';
-//   document.querySelector('.toolbar').style.filter = 'blur(5px)';
-// }
 
+// const div1 = document.createElement('div');
+//       div1.classList.add('multi-cont');
 
+//       const div2 = document.createElement('div');
+//       div2.classList.add('multi-stories');
+//       div2.textContent = projectsCard[0].tittle;
+//       div1.appendChild(div2);
+
+//       const ul1 = document.createElement('ul');
+//       ul1.classList.add('ul-tech1');
+//       div1.appendChild(ul1);
+//       for (let i = 0; i < projectsCard[0].technologies.length; i += 1) {
+//         const li1 = document.createElement('li');
+//         li1.classList.add('li-pop');
+//         ul1.appendChild(li1);
+//         li1.textContent = projectsCard[0].technologies[i];
+//       }
+
+//       const element1 = document.querySelector('body');
+//       element1.appendChild(div1);
+
+//       const img = document.createElement('img');
+//       img.classList.add('image1');
+//       img.setAttribute('src', projectsCard[0].image);
+//       img.setAttribute('alt', 'project image');
+//       img.setAttribute('width', 'auto');
+//       img.setAttribute('height', '586');
+//       div1.appendChild(img);
+
+//       const div3 = document.createElement('div');
+//       div3.classList.add('div3');
+//       div1.appendChild(div3);
+
+//       const text = document.createElement('div');
+//       text.classList.add('multitext');
+//       text.textContent = projectsCard[0].description;
+//       div3.appendChild(text);
+
+//       const div4 = document.createElement('div');
+//       div3.classList.add('div4');
+//       div3.appendChild(div4);
+
+//       const btnPop = document.createElement('button');
+//       btnPop.classList.add('btn-pop');
+//       div4.appendChild(btnPop);
+//       const aBtn = document.createElement('a');
+//       aBtn.href = projectsCard[0].linkLiveVersion;
+//       btnPop.appendChild(aBtn);
+//       aBtn.textContent = 'See Live';
+//       const icon1 = document.createElement('img');
+//       icon1.classList.add('icon1');
+//       icon1.setAttribute('src', projectsCard[0].image3);
+//       icon1.setAttribute('alt', 'see live image');
+//       btnPop.appendChild(icon1);
+
+//       const ctnPop = document.createElement('button');
+//       ctnPop.classList.add('btn-pop');
+//       div4.appendChild(ctnPop);
+//       const aBtn2 = document.createElement('a');
+//       aBtn2.href = projectsCard[0].linkSource;
+//       ctnPop.appendChild(aBtn2);
+//       aBtn2.textContent = 'See Source';
+//       const icon2 = document.createElement('img');
+//       icon2.classList.add('icon1');
+//       icon2.setAttribute('src', projectsCard[0].image4);
+//       icon2.setAttribute('alt', 'see live image');
+//       ctnPop.appendChild(icon2);
+
+//       const closeSign = document.createElement('img');
+//       closeSign.classList.add('closesign');
+//       closeSign.setAttribute('src', projectsCard[0].image2);
+//       closeSign.setAttribute('alt', 'closesign');
+//       div2.appendChild(closeSign);
+
+function showPopup() {
+  document.querySelector('.popup').style.display = 'flex';
+  // document.querySelector('.grid-container').style.filter = 'blur(5px)';
+  // document.querySelector('.toolbar').style.filter = 'blur(5px)';
+}
 
 
 /* ----------------- Building Popup (Mobile) ---------------- */
 
-const popupSection = document.querySelector('.popup');
-const popupX = document.createElement('img');
-popupX.src = 'assets/mobile/x.svg';
-popupX.alt = 'popup close button';
-popupX.id = 'x-popup';
+const closeSign = document.createElement('img');
+closeSign.classList.add('closesign');
+// closeSign.setAttribute('src', projectsCard[0].image2);
+// closeSign.setAttribute('alt', 'closesign');
+closeSign.src = 'assets/mobile/x.svg';
+closeSign.alt = 'closesign';
 popupX.onclick = hidePopup;
-const popupName = document.createElement('h3');
+const popupTitle = document.createElement('h3');
 const popupUl = document.createElement('ul');
-const popupImage = document.createElement('img');
-popupImage.alt = 'project';
-popupImage.className = 'image1';
+const popupimg = document.createElement('img');
+popupimg.alt = 'project';
+popupimg.className = 'image1';
 const popupDescription = document.createElement('p');
 const liveButton = document.createElement('button');
 liveButton.innerText = 'See Live';
-liveButton.className = 'my-buttons live-button popup-button';
+liveButton.className = 'btn-pop';
 const sourceButton = document.createElement('button');
 sourceButton.innerText = 'See Source';
-sourceButton.className = 'my-buttons source-button popup-button';
+sourceButton.className = 'btn-pop';
 popupSection.append(
   popupX,
-  popupName,
+  popupTitle,
   popupUl,
-  popupImage,
+  popupimg,
   popupDescription,
   liveButton,
   sourceButton,
@@ -122,7 +196,7 @@ popupSection.append(
 /* ----------------- Binding Popup (Mobile) ---------------- */
 
 function bindPopup(projectNumber) {
-  popupName.innerText = projectPages[projectNumber]. headerName;
+  popupTitle.innerText = projectPages[projectNumber]. headerName;
   popupUl.innerHTML = '';
   for (
     let index = 0;
@@ -132,7 +206,7 @@ function bindPopup(projectNumber) {
     popupUl.innerHTML += `<li>${projectPages[projectNumber].technologies[index]}</li>`;
   }
   popupSection.appendChild(popupUl);
-  popupImage.src = projectPages[projectNumber].image1;
+  popupimg.src = projectPages[projectNumber].image1;
   popupDescription.innerText = projectPages[projectNumber].description;
   showPopup();
 }
