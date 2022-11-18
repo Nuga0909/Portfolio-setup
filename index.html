@@ -28,16 +28,17 @@
   <body>
     <header>
       <a href="#" class="header-logo">John Doe</a>
-      <nav id="nav-mobile">
-        <a href="#">
+      <nav class="nav">
+        <ul class="nav-lists">
+          <li><a href="" class="close"><img src="assets/Icon.png" alt=""/></a></li>
+          <li><a href="#portfolio" class="nav-list">Portfolio</a></li>
+          <li><a href="#about" class="nav-list">About</a></li>
+          <li><a href="#contact" class="nav-list">Contact</a></li>
+          <li><a href="" class="nav-list2"><img src="assets\Union 1.png" alt="Mail" /></a></li>
+        </ul>
+        <a href="#" id="nav-mobile">
           <img src="assets\Union.png" alt="drop-down" id="hamburger" />
         </a>
-      </nav>
-      <nav id="nav-desktop">
-        <a href="">Portfolio</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href=""><img src="./assets/Union - 1.png" alt="Mail" /></a>
       </nav>
     </header>
     <section class="container">
@@ -82,7 +83,7 @@
         </li>
       </ul>
     </section>
-    <section class="works">
+    <section class="works" id="portfolio">
       <div class="main-project">
         <div class="works-header">
           <h1 class="banner">My Recent Works <span class="hr"></h1>
@@ -187,7 +188,7 @@
         </div>
       </div>
     </section>
-    <section class="about-me">
+    <section id="about" class="about-me">
       <h1>About me</h1>
       <p>
         Hello, I’m a software developer! I can help you build a product, feature
@@ -234,7 +235,7 @@
         </ul>
       </div>
     </section>
-    <section class="form">
+    <section class="form" id="contact">
       <h1 class="form-header">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.

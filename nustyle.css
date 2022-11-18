@@ -15,7 +15,7 @@ header {
   height: 72px;
 }
 
-#nav-desktop {
+.nav-lists {
   display: none;
 }
 
@@ -409,17 +409,74 @@ ul.icons2 {
   display: none;
 }
 
+.nav-lists.active {
+  position: fixed;
+  left: -100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #3c3a39;
+  text-align: left;
+  padding-left: 380px;
+  list-style: none;
+  padding-bottom: 450px;
+  width: 100%;
+  margin-top: -40px;
+}
+
+.nav-list2 {
+  display: none;
+}
+
+a.nav-list {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff5e1;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #6f6c6b;
+  margin-inline: 20px;
+  margin-right: 28px;
+}
+
+a.close {
+  float: right;
+  margin-right: 38px;
+  padding-top: 30px;
+}
+
 @media screen and (min-width: 768px) {
   #nav-mobile {
     display: none;
   }
 
-  #nav-desktop {
-    display: inline;
+  .nav-list2 {
+    display: block;
+    padding-top: 36px;
+  }
+
+  .nav-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
     align-self: center;
   }
 
-  #nav-desktop a {
+  ul.nav-lists {
+    list-style: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .nav-lists a {
     padding-right: 32px;
     margin: 0;
     font-family: Inter;
@@ -427,6 +484,7 @@ ul.icons2 {
     font-weight: 600;
     color: #fff;
     text-decoration: none;
+    padding-left: 0;
   }
 
   header img {
