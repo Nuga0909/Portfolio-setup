@@ -478,7 +478,7 @@ a.close {
   line-height: 44px;
   text-align: left;
   color: #172b4d;
-  padding-bottom: 90px;
+  padding-bottom: 130px;
   margin: initial;
 }
 
@@ -488,7 +488,7 @@ a.close {
   margin: 0;
   z-index: 3;
   margin-left: 24px;
-  margin-top: revert;
+  margin-top: 50px;
 }
 
 .ul-tech1 li {
@@ -521,7 +521,7 @@ a.close {
   position: absolute;
 }
 
-button.btn-pop {
+button.btn-pop1 {
   background-color: #a03f07;
   height: 48px;
   border: none;
@@ -536,9 +536,75 @@ button.btn-pop {
   color: #fff;
   padding-right: 12px;
   letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+button.btn-pop2 {
+  background-color: #a03f07;
+  height: 48px;
+  border: none;
+  padding: 12px;
+  margin-right: 14px;
+  margin-top: 16px;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  padding-right: 12px;
+  letter-spacing: 0.05em;
+  right: -113px;
+  position: relative;
+  top: -61px;
+  width: fit-content;
 }
 
 @media screen and (min-width: 768px) {
+  .multitext {
+    width: 40%;
+    position: relative;
+    left: 717px;
+  }
+
+  button.btn-pop2 {
+    left: 827px;
+    top: 215px;
+  }
+
+  button.btn-pop1 {
+    position: relative;
+    left: 720px;
+    top: 279px;
+  }
+
+  button.btn-pop1:hover {
+    background-color: #f8f5f4;
+    border: 1px solid #a03f07;
+    color: #a03f07;
+  }
+
+  button.btn-pop2:hover {
+    background-color: #f8f5f4;
+    border: 1px solid #a03f07;
+    color: #a03f07;
+  }
+
+  .multi-cont2 {
+    padding-top: 20px;
+  }
+
+  .ul-tech1 {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .image1 {
+    width: 50%;
+    position: absolute;
+    top: 183px;
+  }
+
   #nav-mobile {
     display: none;
   }
@@ -572,6 +638,7 @@ button.btn-pop {
     color: #fff;
     text-decoration: none;
     padding-left: 0;
+    border-bottom: none;
   }
 
   header img {

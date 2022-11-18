@@ -22,7 +22,7 @@ const projectPages = [
     headerName: 'Multi Post Stories',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image1: './assets/Img Placeholder - 2.png',
+    image1: './assets/Snapshoot Portfolio.png',
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
@@ -110,10 +110,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   popupDescription.className = 'multitext';
   const liveButton = document.createElement('button');
   liveButton.innerText = 'See Live';
-  liveButton.className = 'btn-pop';
+  liveButton.className = 'btn-pop1 hover';
   const sourceButton = document.createElement('button');
   sourceButton.innerText = 'See Source';
-  sourceButton.className = 'btn-pop';
+  sourceButton.className = 'btn-pop2 hover';
   popupCont.append(
     closeSign,
     popupTitle,
