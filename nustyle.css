@@ -478,7 +478,7 @@ a.close {
   line-height: 44px;
   text-align: left;
   color: #172b4d;
-  padding-bottom: 130px;
+  padding-bottom: 122px;
   margin: initial;
 }
 
@@ -525,9 +525,8 @@ button.btn-pop1 {
   background-color: #f55800;
   height: 48px;
   border: none;
-  padding: 12px;
-  margin-right: 14px;
-  margin-top: 16px;
+  padding: 1px;
+  margin-right: 36px;
   text-decoration: none;
   font-family: 'Inter';
   font-style: normal;
@@ -537,13 +536,17 @@ button.btn-pop1 {
   padding-right: 12px;
   letter-spacing: 0.05em;
   width: fit-content;
+  top: -9px;
+  padding-left: 10px;
+  position: relative;
 }
 
 button.btn-pop2 {
   background-color: #f55800;
   height: 48px;
   border: none;
-  padding: 12px;
+  padding: 1px;
+  padding-left: 12px;
   margin-right: 14px;
   margin-top: 16px;
   text-decoration: none;
@@ -554,9 +557,9 @@ button.btn-pop2 {
   color: #fff;
   padding-right: 12px;
   letter-spacing: 0.05em;
-  right: -113px;
+  right: -124px;
   position: relative;
-  top: -61px;
+  top: -73px;
   width: fit-content;
 }
 
