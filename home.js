@@ -88,6 +88,7 @@ const projectPages = [
 
 
 
+
 /* ----------------- Building Popup (Mobile) ---------------- */
 
 const popupSection = document.querySelector('.popup');
