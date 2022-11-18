@@ -409,6 +409,21 @@ ul.icons2 {
   display: none;
 }
 
+.nav-lists.active {
+  position: fixed;
+  left: -100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #3c3a39;
+  text-align: left;
+  padding-left: 380px;
+  list-style: none;
+  padding-bottom: 450px;
+  width: 100%;
+  margin-top: -40px;
+}
+
 .multi-cont {
   display: none;
   position: fixed;
