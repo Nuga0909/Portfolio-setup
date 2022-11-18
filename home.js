@@ -17,10 +17,9 @@ function hidePopup() {
   document.querySelector('.multi-cont').style.display = 'none';
 }
 
-
 const projectPages = [
   {
-     headerName: 'Multi Post Stories',
+    headerName: 'Multi Post Stories',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     image1: './assets/Img Placeholder - 2.png',
@@ -29,7 +28,7 @@ const projectPages = [
     sourceLink: '#',
   },
   {
-     headerName: 'Profesional Art',
+    headerName: 'Profesional Art',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     image1: './assets/Placeholder44b.png',
@@ -39,7 +38,7 @@ const projectPages = [
   },
 
   {
-     headerName: 'Data Dashboard',
+    headerName: 'Data Dashboard',
     description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
     image1: './assets/Placeholder44b.png',
@@ -48,7 +47,7 @@ const projectPages = [
     sourceLink: '#',
   },
   {
-     headerName: 'Website Protfolio',
+    headerName: 'Website Protfolio',
     description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
     image1: './assets/Placeholder44b.png',
@@ -57,7 +56,7 @@ const projectPages = [
     sourceLink: '#',
   },
   {
-     headerName: 'Profesional Art',
+    headerName: 'Profesional Art',
     description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
     image1: './assets/Placeholder44b.png',
@@ -66,7 +65,7 @@ const projectPages = [
     sourceLink: '#',
   },
   {
-     headerName: 'Data Dashboard',
+    headerName: 'Data Dashboard',
     description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
     image1: './assets/Placeholder44b.png',
@@ -75,11 +74,11 @@ const projectPages = [
     sourceLink: '#',
   },
   {
-     headerName: 'Website Protfolio',
+    headerName: 'Website Protfolio',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard',
-      image1: './assets/Placeholder44b.png',
-      technologies: ['html', 'bootstrap', 'Ruby'],
+    image1: './assets/Placeholder44b.png',
+    technologies: ['html', 'bootstrap', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
   },
@@ -87,16 +86,10 @@ const projectPages = [
 
 function showPopup() {
   document.querySelector('.multi-cont').style.display = 'flex';
- 
 }
 
-
-
-
 /* ----------------- Building Popup (Mobile) ---------------- */
-document.addEventListener("DOMContentLoaded", function(event) {     
-
-
+document.addEventListener('DOMContentLoaded', (event) => {
   const popupSection = document.querySelector('.multi-cont');
   const popupCont = document.createElement('div');
   popupCont.className = 'multi-cont2';
@@ -134,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   /* ----------------- Binding Popup (Mobile) ---------------- */
 
   function bindPopup(projectNumber) {
-    popupTitle.innerText = projectPages[projectNumber]. headerName;
+    popupTitle.innerText = projectPages[projectNumber].headerName;
     popupUl.innerHTML = '';
     for (
       let index = 0;
@@ -160,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   projectInnerDiv.id = 'project-story';
   projectArticle.append(imageMob, projectInnerDiv);
   const projectH2 = document.createElement('h2');
-  projectH2.innerText = projectPages[0]. headerName;
+  projectH2.innerText = projectPages[0].headerName;
   const projectP = document.createElement('p');
   projectP.innerText = projectPages[0].description;
   const projectUl = document.createElement('ul');
@@ -179,9 +172,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     seeProjectBtn,
   );
 
-
-
-/* ----------------- Building OTHER projects part (Mobile) ---------------- */
+  /* ----------------- Building OTHER projects part (Mobile) ---------------- */
 
   const otherProjectsSection = document.getElementById('projects-container');
   for (let index = 1; index < projectPages.length; index += 1) {
@@ -190,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     projectArticle.id = `project${index}`;
     const otherProjectsH2 = document.createElement('h2');
     otherProjectsH2.className = 'title-post hover';
-    otherProjectsH2.innerText = projectPages[index]. headerName;
+    otherProjectsH2.innerText = projectPages[index].headerName;
     const otherProjectsP = document.createElement('p');
     otherProjectsP.className = 'supporting-text hover';
     otherProjectsP.innerText = projectPages[index].description;
@@ -210,5 +201,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const newArt = document.getElementById(projectArticle.id);
     newArt.append(otherProjectsH2, otherProjectsP, ul, button);
   }
-
 });
