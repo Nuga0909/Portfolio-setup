@@ -13,6 +13,8 @@ header {
   justify-content: space-between;
   background-color: #3c3a39;
   height: 72px;
+  position: fixed;
+  width: -webkit-fill-available;
 }
 
 .nav-lists {
