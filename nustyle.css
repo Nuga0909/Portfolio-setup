@@ -424,6 +424,33 @@ ul.icons2 {
   margin-top: -40px;
 }
 
+.nav-list2 {
+  display: none;
+}
+
+a.nav-list {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff5e1;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #6f6c6b;
+  margin-inline: 20px;
+  margin-right: 28px;
+}
+
+a.close {
+  float: right;
+  margin-right: 38px;
+  padding-top: 30px;
+}
+
 .multi-cont {
   display: none;
   position: fixed;
