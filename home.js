@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+// eslint-disable-next-line func-names
 window.onload = function () {
   const hamburger = document.querySelector('#nav-mobile');
   const nav = document.querySelector('.nav-lists');
@@ -89,7 +90,7 @@ function showPopup() {
 }
 
 /* ----------------- Building Popup (Mobile) ---------------- */
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   const popupSection = document.querySelector('.multi-cont');
   const popupCont = document.createElement('div');
   popupCont.className = 'multi-cont2';
@@ -201,4 +202,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const newArt = document.getElementById(projectArticle.id);
     newArt.append(otherProjectsH2, otherProjectsP, ul, button);
   }
+
+  const form = document.querySelector('.contacte-form');
+  const word = document.querySelector('.msg');
+  const Email = document.querySelector('#myText');
+  form.addEventListener('submit', (e) => {
+    if (Email.value === Email.value.toLowerCase()) {
+      word.textContent = '';
+    } else {
+      e.preventDefault();
+      word.textContent = 'The email must be in lowercase';
+    }
+  });
 });
