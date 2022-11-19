@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+// eslint-disable-next-line func-names
 window.onload = function () {
   const hamburger = document.querySelector('#nav-mobile');
   const nav = document.querySelector('.nav-lists');
@@ -89,7 +90,7 @@ function showPopup() {
 }
 
 /* ----------------- Building Popup (Mobile) ---------------- */
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   const popupSection = document.querySelector('.multi-cont');
   const popupCont = document.createElement('div');
   popupCont.className = 'multi-cont2';
