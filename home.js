@@ -202,3 +202,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     newArt.append(otherProjectsH2, otherProjectsP, ul, button);
   }
 });
+
+window.onload = function () {
+  const form = document.querySelector('.contacte-form');
+  const word = document.querySelector('.msg');
+  const Email = document.querySelector('.myText');
+  form.addEventListener('submit', (e) => {
+    if (Email.value === Email.value.toLowerCase()) {
+      word.textContent = '';
+    } else {
+      e.preventDefault();
+      word.textContent = 'The email must be in lowercase';
+    }
+  });
+};
