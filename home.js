@@ -214,4 +214,36 @@ document.addEventListener('DOMContentLoaded', () => {
       word.textContent = 'The email must be in lowercase';
     }
   });
+
+  const userName = document.querySelector('.name');
+  const userMsg = document.querySelector('#textarea');
+  form.addEventListener('input', () => {
+    const contactForm = {
+      name: userName.value,
+      email: Email.value,
+      message: userMsg.value,
+    };
+
+    localStorage.setItem('inputForm', JSON.stringify(contactForm));
+  });
+
+  window.onload = () => {
+    let savedFormData = localStorage.getItem('inputForm');
+
+    savedFormData = JSON.parse(savedFormData);
+
+    // Check if the form data object is found on localStorage
+
+    if (savedFormData) {
+    // populate inputs values if data was found
+      const Email2 = document.querySelector('#myText');
+      const userName2 = document.querySelector('.name');
+      const userMsg2 = document.querySelector('#textarea');
+
+      // ex: nameInput.value = savedFormData.name
+      Email2.value = savedFormData.email;
+      userName2.value = savedFormData.name;
+      userMsg2.value = savedFormData.message;
+    }
+  };
 });
