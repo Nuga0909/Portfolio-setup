@@ -29,11 +29,11 @@ const projectPages = [
     sourceLink: '#',
   },
   {
-    headerName: 'Profesional Art',
+    headerName: 'Concert Website',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image1: './assets/Placeholder44b.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
+      "This is an HTML/CSS & JavaScript capstone project for Microverse Module 1. A concert website for THE EXPERIENCE Lagos",
+    image1: './assets/concert.png',
+    technologies: ['html', 'css', 'javascript'],
     liveLink: '#',
     sourceLink: '#',
   },
